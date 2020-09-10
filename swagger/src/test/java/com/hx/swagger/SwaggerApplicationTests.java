@@ -1,10 +1,10 @@
-package com.hx.all;
+package com.hx.swagger;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AllApplicationTests {
+class SwaggerApplicationTests {
 
     @Test
     void contextLoads() {

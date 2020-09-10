@@ -1,13 +1,13 @@
-package com.hx.all;
+package com.hx.swagger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AllApplication {
+public class SwaggerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AllApplication.class, args);
+        SpringApplication.run(SwaggerApplication.class, args);
     }
 
 }
