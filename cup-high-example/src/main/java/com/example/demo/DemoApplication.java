@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,8 +13,27 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
         System.out.println("执行测试方法。。。");
+        
+//        //堆溢出
+//       heap();
+        
+        //栈溢出
+//        stack();
+        
 //        cpuHigh();
-        System.out.println("测试方法执行结束。。。");
+//        System.out.println("测试方法执行结束。。。");
+    }
+    
+    public void heap() {
+        List<Object> list= new ArrayList<>();
+        while (true) {
+            System.out.println("长度:" + list.size());
+            list.add(new Object());
+        }
+    }
+    
+    public void stack() {
+        stack();
     }
 
     public static void cpuHigh() {
