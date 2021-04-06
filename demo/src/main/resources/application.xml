@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+
+    <bean id="msgService" class="com.hx.springIoc.MsgServiceImpl"/>
+    
+    <bean id="messageService" class="com.hx.springIoc.MessageServiceImpl">
+        <property name="msgService" ref="msgService"/>
+    </bean>
+</beans>
